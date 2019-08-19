@@ -1,0 +1,29 @@
+{
+    "name": "webjump/module-page-builder",
+    "license": "Copyright",
+    "description": "Page Builder module extend",
+    "require": {
+        "magento/module-page-builder": "*"
+    },
+    "type": "magento2-module",
+    "authors": [
+        {
+            "name": "Webjump Developers Team",
+            "email": "developers@webjump.com.br"
+        }
+    ],
+    "repositories": {
+        "magento": {
+            "type": "composer",
+            "url": "https://repo.magento.com/"
+        }
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Webjump\\PageBuilder\\": ""
+        }
+    }
+}
