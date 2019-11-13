@@ -4,7 +4,7 @@
      css="data.main.css()"
      event="{ mouseover: onMouseOver, mouseout: onMouseOut }, mouseoverBubble: false">
     <render args="getOptions().template" />
-    <h3 data-bind="liveEdit: { field: 'title', placeholder: 'Edit question' }" class="pagebuilder-dropdown-content-collapsible" aria-expanded="true"></h3>
+    <h3 data-bind="liveEdit: { field: 'dropdown_title', placeholder: 'Edit question' }" class="pagebuilder-dropdown-content-collapsible" aria-expanded="true"></h3>
     <div class="children-min-height" data-role="content" css="{filled: contentType.children().length > 0}">
         <render args="childTemplate" />
         <div class="pagebuilder-display-label" html="function () { return displayLabel().toUpperCase(); }()"></div>

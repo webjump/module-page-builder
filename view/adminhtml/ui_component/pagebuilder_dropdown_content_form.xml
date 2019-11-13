@@ -52,13 +52,6 @@
                 <dataType>text</dataType>
                 <elementTmpl>Magento_PageBuilder/form/element/visual-select</elementTmpl>
             </settings>
-            <formElements>
-                <select>
-                    <settings>
-                        <options class="AppearanceSourceDropdownContent" />
-                    </settings>
-                </select>
-            </formElements>
         </field>
     </fieldset>
     <fieldset name="general" sortOrder="20">
@@ -67,25 +60,7 @@
             <collapsible>true</collapsible>
             <opened>true</opened>
         </settings>
-        <field name="image" formElement="imageUploader">
-            <settings>
-                <label translate="true">Image</label>
-                <componentType>imageUploader</componentType>
-            </settings>
-            <formElements>
-                <imageUploader>
-                    <settings>
-                        <allowedExtensions>jpg jpeg gif png</allowedExtensions>
-                        <maxFileSize>4194304</maxFileSize>
-                        <uploaderConfig>
-                            <param xsi:type="string" name="url">pagebuilder/contenttype/image_upload</param>
-                        </uploaderConfig>
-                        <previewTmpl>Magento_PageBuilder/form/element/uploader/preview</previewTmpl>
-                    </settings>
-                </imageUploader>
-            </formElements>
-        </field>
-        <field name="title" sortOrder="10" formElement="input">
+        <field name="dropdown_title" sortOrder="10" formElement="input">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
                     <item name="source" xsi:type="string">page</item>
@@ -93,7 +68,7 @@
                 </item>
             </argument>
             <settings>
-                <dataScope>title</dataScope>
+                <dataScope>dropdown_title</dataScope>
                 <dataType>text</dataType>
                 <label translate="true">Title</label>
             </settings>
@@ -103,7 +78,7 @@
         <field name="margins_and_padding" sortOrder="70" formElement="input" component="Magento_PageBuilder/js/form/element/margins-and-padding">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
-                    <item name="default" xsi:type="string">{"margin":{"top":"0","right":"0","bottom":"0","left":"0"},"padding":{"top":"0","right":"0","bottom":"0","left":"35"}}</item>
+                    <item name="default" xsi:type="string">{"margin":{"top":"0","right":"0","bottom":"0","left":"0"},"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}</item>
                 </item>
             </argument>
             <settings>

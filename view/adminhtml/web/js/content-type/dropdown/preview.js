@@ -70,7 +70,7 @@ define([
             this.contentType,
             this.contentType.stageId,
             {
-                title: $t('Title'),
+                button_text: $t('Title'),
             }
         ).then(function(container) {
             self.contentType.addChild(container);
