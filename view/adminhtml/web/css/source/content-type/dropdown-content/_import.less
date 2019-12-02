@@ -1,0 +1,54 @@
+//
+//  Dropdown Content styles
+//  _____________________________________________
+
+.pagebuilder-dropdown-content {
+    border: 1px solid #cccccc;
+
+    .placeholder-text {
+        left: 5px;
+    }
+
+    .pagebuilder-dropdown-content-collapsible {
+        position: relative;
+        font-weight: bold;
+        line-height: 1.1;
+        margin-top: 2rem;
+        font-size: 1.4rem;
+        padding-left: 20px;
+        margin-bottom: 2rem;
+
+        &:before {
+            left: 0;
+            top: 2px;
+            font-size: 12px;
+            margin-right: 5px;
+            position: absolute;
+            font-family: @icons-admin__font-name;
+        }
+
+        &[aria-expanded="true"]:before {
+            content: @icon-caret-up__content;
+        }
+
+        &[aria-expanded="false"]:before {
+            content: @icon-caret-down__content;
+        }
+    }
+
+    &.pagebuilder-content-type-active {
+        border: 1px solid #cccccc;
+    }
+
+    [data-role="content"] {
+        position: relative;
+    }
+
+    [data-role="content"] {
+        &:not(.filled) {
+            .element-children {
+                padding: 50px;
+            }
+        }
+    }
+}
